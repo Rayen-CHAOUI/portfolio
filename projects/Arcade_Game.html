@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Battleship Arcade Game (Bataille de Navale) | Projet</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: #fafafa;
+      color: #222;
+    }
+    h1 {
+      color: #004080;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      color: #007acc;
+      margin-top: 2rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    p {
+      line-height: 1.5;
+    }
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 2rem;
+      background: #007acc;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .back-btn:hover {
+      background: #005f99;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html#projects" class="back-btn">← Retour au Portfolio</a>
+
+  <h1>Battleship Arcade Game (Bataille de Navale)</h1>
+
+  <p>
+    Un jeu web interactif de Bataille Navale développé avec <strong>HTML, CSS, JavaScript</strong> pour le frontend, et <strong>Node.js, Express.js, MongoDB</strong> pour le backend.
+    Cette application propose une expérience riche pour les joueurs ainsi qu’un tableau de bord administrateur complet pour la gestion et l’analyse.
+  </p>
+
+  <h2>Fonctionnalités</h2>
+
+  <h3>Tableau de Bord Administrateur</h3>
+  <ul>
+    <li><strong>Gestion des Joueurs :</strong></li>
+    <ul>
+      <li>Affichage de tous les joueurs enregistrés</li>
+      <li>Ajout manuel de nouveaux joueurs</li>
+      <li>Suppression de joueurs de la base de données</li>
+    </ul>
+    <li><strong>Journaux d'Activité :</strong> Suivi et visualisation des actions réalisées par les utilisateurs</li>
+    <li><strong>Rapports Statistiques :</strong> Génération de rapports visuels et graphiques sur les activités et performances des joueurs</li>
+    <li><strong>Barre de Navigation :</strong> Liens vers Joueurs, Logs, Ajouter un joueur, Supprimer un joueur, Rapports</li>
+  </ul>
+
+  <h3>Tableau de Bord Joueur</h3>
+  <ul>
+    <li><strong>Création de compte et connexion :</strong></li>
+    <ul>
+      <li>Inscription avec nom d’utilisateur et adresse email uniques</li>
+      <li>Connexion sécurisée</li>
+      <li>Réinitialisation de mot de passe via email</li>
+    </ul>
+    <li><strong>Modes de Jeu :</strong> Jouer contre la machine, Multijoueur local, Multijoueur en ligne avec Socket.IO</li>
+    <li><strong>Classement des joueurs :</strong> Affichage en direct des scores</li>
+  </ul>
+
+  <h2>Technologies utilisées</h2>
+  <ul>
+    <li><strong>Frontend :</strong> HTML, CSS, JavaScript</li>
+    <li><strong>Backend :</strong> Node.js, Express.js</li>
+    <li><strong>Base de Données :</strong> MongoDB</li>
+    <li><strong>Multijoueur temps réel :</strong> Socket.IO</li>
+  </ul>
+
+</body>
+</html>

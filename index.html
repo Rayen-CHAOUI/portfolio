@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rayen Chaoui | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+  <header>
+    <h1>Rayen Chaoui</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="darkModeToggle">🌙</button>
+  </header>
+
+  <section id="about" class="about" data-aos="fade-up">
+    <div class="profile">
+      <img src="images/rayen_pic.jpg" alt="Rayen Chaoui" class="profile-pic"/>
+      <div>
+        <h2>Hi, I'm Rayen CHAOUI</h2>
+        <p>Software Engineering student from Algeria passionate about impactful software.</p>
+        <ul>
+          <li>Looking to grow as a back-end developer.</li>
+          <li>Skilled in Node.js, Express.js, MongoDB, MySQL.</li>
+          <li>Expanding skills in Python, JavaScript, and Flutter.</li>
+          <li>Exploring AI & Computer Vision (PyTorch, OpenCV).</li>
+          <li>Passionate about learning and solving real-world problems.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="projects" class="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project-cards">
+
+      <div class="card" onclick="location.href='projects/SmartShelf.html'">
+        <h3>SmartShelf</h3>
+        <p>Translates ASL signs to text using Python and PyTorch.</p>
+      </div>
+
+      <div class="card" onclick="location.href='projects/Wassalni.html'">
+        <h3>Wassalni</h3>
+        <p>Multiplayer game using Socket.IO and Node.js.</p>
+      </div>
+
+      <div class="card" onclick="location.href='projects/Fingers_Counter.html'">
+        <h3>Fingers Counter</h3>
+        <p>Chatbot using OpenAI API and Node.js.</p>
+      </div>
+
+      <div class="card" onclick="location.href='projects/Car_Maintenance.html'">
+        <h3>Car Maintenance</h3>
+        <p>My personal portfolio website built with HTML, CSS, and JavaScript.</p>
+      </div>
+
+      <div class="card" onclick="location.href='projects/Arcade_Game.html'">
+        <h3>Arcade Game</h3>
+        <p>My personal portfolio website built with HTML, CSS, and JavaScript.</p>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+  <section id="contact" class="contact" data-aos="zoom-in">
+    <h2>Contact Me</h2>
+    <div class="social-links">
+      <a href="https://github.com/Rayen-CHAOUI" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/Rayen-CHAOUI/" target="_blank">LinkedIn</a>
+      <a href="mailto:chaouirayen@gmail.com">Email</a>
+      <a href="https://instagram.com/rayen.chaoui" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

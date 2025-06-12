@@ -3,43 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WASSALNI | Project Details</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <title>WASSALNI | Détails du projet</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       padding: 2rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      background-color: #fdfdfd;
-      color: #222;
+      background-color: #0d1117;
+      color: #c9d1d9;
     }
 
     h1 {
       font-size: 2.5rem;
-      color: #2c3e50;
+      color: #58a6ff;
       margin-bottom: 1rem;
-    }
-
-    h2 {
-      color: #007acc;
-      margin-top: 2rem;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    li {
-      margin-bottom: 0.5rem;
+      text-align: center;
     }
 
     .back-btn {
       display: inline-block;
       margin-bottom: 2rem;
       text-decoration: none;
-      background: #007acc;
+      background: #238636;
       color: white;
       padding: 0.5rem 1rem;
       border-radius: 5px;
@@ -47,7 +33,29 @@
     }
 
     .back-btn:hover {
-      background: #005fa3;
+      background: #2ea043;
+    }
+
+    .card {
+      background-color: #161b22;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      color: #1f6feb;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin: 0.5rem 0 1rem 0;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
     }
   </style>
 </head>
@@ -57,61 +65,72 @@
 
   <h1>WASSALNI</h1>
 
-  <p>
-    Le projet <strong>WASSALNI</strong> propose une solution de covoiturage interurbain durable et innovante. Il vise à :
+  <div class="card">
+    <h2>Objectif du projet</h2>
+    <p><strong>WASSALNI</strong> est une plateforme innovante de covoiturage interurbain visant à :</p>
     <ul>
       <li>Réduire les embouteillages et les émissions de CO₂.</li>
-      <li>Offrir une alternative économique et écologique aux transports classiques.</li>
-      <li>Faciliter la communication entre les usagers pour une mobilité plus responsable.</li>
+      <li>Proposer une alternative économique et écologique aux transports traditionnels.</li>
+      <li>Faciliter la communication entre les usagers pour une mobilité responsable.</li>
     </ul>
-  </p>
+  </div>
 
-  <h2>Description du projet</h2>
-  <ul>
-    <li>Développement d'une plateforme intuitive pour faciliter le covoiturage entre wilayas.</li>
-    <li>Planification et partage de trajets.</li>
-    <li>Messagerie intégrée et système d'évaluation pour renforcer la confiance.</li>
-    <li>Service de dépannage intégré avec partenaires.</li>
-    <li>Réduction de l'empreinte carbone par le partage de véhicules.</li>
-  </ul>
+  <div class="card">
+    <h2>Description du projet</h2>
+    <ul>
+      <li>Plateforme intuitive pour le covoiturage entre wilayas.</li>
+      <li>Planification et partage de trajets.</li>
+      <li>Messagerie intégrée et système d’évaluation.</li>
+      <li>Service de dépannage intégré avec des partenaires.</li>
+      <li>Diminution de l’empreinte carbone par le partage de véhicules.</li>
+    </ul>
+  </div>
 
-  <h2>Fonctionnalités de base</h2>
-  <ul>
-    <li>Création et connexion de compte via numéro de téléphone.</li>
-    <li>Partager et rechercher des trajets inter-wilayas.</li>
-    <li>Réserver et payer un trajet.</li>
-    <li>Proposer ou rechercher un service de dépannage.</li>
-    <li>Ajouter des trajets aux favoris.</li>
-    <li>Gérer le profil utilisateur (infos, suppression...)</li>
-    <li>Ajouter une ou plusieurs voitures.</li>
-    <li>Déclencher un SOS avec localisation en cas d'accident.</li>
-    <li>Se déconnecter de l'application.</li>
-  </ul>
+  <div class="card">
+    <h2>Fonctionnalités de base</h2>
+    <ul>
+      <li>Inscription et connexion via numéro de téléphone.</li>
+      <li>Recherche et publication de trajets inter-wilayas.</li>
+      <li>Réservation et paiement des trajets.</li>
+      <li>Recherche ou proposition de services de dépannage.</li>
+      <li>Ajout de trajets aux favoris.</li>
+      <li>Gestion du profil utilisateur (infos, suppression, etc.).</li>
+      <li>Ajout d’une ou plusieurs voitures personnelles.</li>
+      <li>Déclenchement d’un SOS avec géolocalisation.</li>
+      <li>Déconnexion de l’application.</li>
+    </ul>
+  </div>
 
-  <h2>Fonctionnalités avancées</h2>
-  <ul>
-    <li>Système de paiement sécurisé.</li>
-    <li>Messagerie instantanée.</li>
-    <li>Notations et avis des utilisateurs.</li>
-    <li>Géolocalisation en temps réel.</li>
-    <li>Système de notifications.</li>
-    <li>Générateur de code OTP pour validation.</li>
-  </ul>
+  <div class="card">
+    <h2>Fonctionnalités avancées</h2>
+    <ul>
+      <li>Système de paiement sécurisé.</li>
+      <li>Messagerie instantanée entre utilisateurs.</li>
+      <li>Notations et avis sur les trajets.</li>
+      <li>Suivi en temps réel par géolocalisation.</li>
+      <li>Système de notifications push.</li>
+      <li>Générateur de code OTP pour validation.</li>
+    </ul>
+  </div>
 
-  <h2>Fonctionnalités de sécurité</h2>
-  <ul>
-    <li>Historique des trajets.</li>
-    <li>Signalement d'urgence.</li>
-    <li>Vérification de l'identité et du téléphone.</li>
-    <li>Antécédents des conducteurs.</li>
-  </ul>
+  <div class="card">
+    <h2>Fonctionnalités de sécurité</h2>
+    <ul>
+      <li>Historique complet des trajets.</li>
+      <li>Système d’alerte d’urgence.</li>
+      <li>Vérification d’identité et du numéro de téléphone.</li>
+      <li>Consultation des antécédents des conducteurs.</li>
+    </ul>
+  </div>
 
-  <h2>Technologies utilisées</h2>
-  <ul>
-    <li><strong>Frontend :</strong> Flutter & Dart</li>
-    <li><strong>Backend :</strong> Node.js, Express.js, MongoDB</li>
-    <li><strong>Admin Platform :</strong> HTML, CSS, JavaScript</li>
-  </ul>
+  <div class="card">
+    <h2>Technologies utilisées</h2>
+    <ul>
+      <li><strong>Frontend :</strong> Flutter & Dart</li>
+      <li><strong>Backend :</strong> Node.js, Express.js, MongoDB</li>
+      <li><strong>Plateforme Admin :</strong> HTML, CSS, JavaScript</li>
+    </ul>
+  </div>
 
 </body>
 </html>

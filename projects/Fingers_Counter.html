@@ -2,52 +2,138 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Finger Counter | Project Details</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Finger Counter | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
+    :root {
+      --bg: #0d1117;
+      --text: #c9d1d9;
+      --primary: #58a6ff;
+      --secondary: #1f6feb;
+      --card-bg: #161b22;
+      --accent: #238636;
+      --accent-hover: #2ea043;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
       padding: 2rem;
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
-      background-color: #fdfdfd;
-      color: #222;
     }
 
-    h1 {
-      font-size: 2.5rem;
-      color: #2c3e50;
-      margin-bottom: 1rem;
-    }
-
-    h2 {
-      color: #007acc;
-      margin-top: 2rem;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    li {
-      margin-bottom: 0.5rem;
-    }
-
-    .back-btn {
+    a.back-btn {
       display: inline-block;
       margin-bottom: 2rem;
       text-decoration: none;
-      background: #007acc;
+      background: var(--accent);
       color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      transition: background 0.3s;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s ease;
     }
 
-    .back-btn:hover {
-      background: #005fa3;
+    a.back-btn:hover {
+      background: var(--accent-hover);
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #8b949e;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--secondary);
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+      color: var(--primary);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      list-style-type: none;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+      position: relative;
+      padding-left: 1.2rem;
+    }
+
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+    }
+
+    .tech-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .tech-item {
+      background: var(--card-bg);
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      color: var(--text);
+      font-weight: 500;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
@@ -55,32 +141,43 @@
 
   <a href="../index.html#projects" class="back-btn">← Retour au Portfolio</a>
 
-  <h1>Finger Counter</h1>
+  <div class="hero">
+    <h1>Finger Counter</h1>
+    <p>Une application Python interactive qui détecte les doigts levés en temps réel avec webcam et interface graphique</p>
+  </div>
 
-  <p>
-    <strong>Finger Counter</strong> est une application Python interactive qui utilise <strong>OpenCV</strong> et <strong>MediaPipe</strong> pour détecter les mains et compter le nombre de doigts levés en temps réel. Elle est dotée d'une interface graphique élégante et moderne conçue avec <strong>CustomTkinter</strong>.
-  </p>
+  <div class="section">
+    <h2>Fonctionnalités</h2>
 
-  <h2>Fonctionnalités</h2>
-  <ul>
-    <li>Détection en temps réel jusqu’à deux mains simultanément.</li>
-    <li>Comptage précis du nombre de doigts levés pour chaque main.</li>
-    <li>Interface graphique interactive avec :</li>
-    <ul>
-      <li>Lancement en un seul clic.</li>
-      <li>Mode clair et sombre.</li>
-      <li>Affichage de l’heure en temps réel.</li>
-      <li>Flux vidéo via la webcam intégré à l’interface.</li>
-    </ul>
-  </ul>
+    <div class="card">
+      <h3>Détection & Comptage</h3>
+      <ul>
+        <li>Détection en temps réel jusqu’à deux mains simultanément</li>
+        <li>Comptage précis du nombre de doigts levés</li>
+      </ul>
+    </div>
 
-  <h2>Technologies utilisées</h2>
-  <ul>
-    <li><strong>Langage :</strong> Python 3</li>
-    <li><strong>Vision par ordinateur :</strong> OpenCV</li>
-    <li><strong>Détection des mains :</strong> MediaPipe</li>
-    <li><strong>Interface graphique :</strong> CustomTkinter</li>
-  </ul>
+    <div class="card">
+      <h3>Interface Graphique Moderne</h3>
+      <ul>
+        <li>Interface avec <strong>CustomTkinter</strong></li>
+        <li>Lancement en un clic</li>
+        <li>Mode clair et sombre</li>
+        <li>Affichage de l’heure en direct</li>
+        <li>Flux webcam intégré dans la fenêtre</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Technologies Utilisées</h2>
+    <div class="tech-list">
+      <div class="tech-item">Python 3</div>
+      <div class="tech-item">OpenCV</div>
+      <div class="tech-item">MediaPipe</div>
+      <div class="tech-item">CustomTkinter</div>
+    </div>
+  </div>
 
 </body>
 </html>

@@ -258,3 +258,19 @@ section {
 .dark-mode .skill-category ul li {
   color: #9ca3af;
 }
+
+.load_more {
+  background: #161b22;
+  color: #c9d1d9;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s, transform 0.3s;
+  font-size: large;
+}
+
+.load_more:hover {
+  background: #1f6feb;
+  transform: translateY(-2px);
+}

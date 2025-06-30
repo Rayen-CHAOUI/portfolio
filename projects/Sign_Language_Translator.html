@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Translator | Détails du Projet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0d1117;
+      --text: #c9d1d9;
+      --primary: #58a6ff;
+      --secondary: #1f6feb;
+      --accent: #238636;
+      --accent-hover: #2ea043;
+      --card-bg: #161b22;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    a.back-btn {
+      display: inline-block;
+      margin-bottom: 2rem;
+      text-decoration: none;
+      background: var(--accent);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    a.back-btn:hover {
+      background: var(--accent-hover);
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--primary);
+    }
+
+    .hero p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #8b949e;
+    }
+
+    .section {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--secondary);
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    .section p {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+      position: relative;
+      padding-left: 1.2rem;
+    }
+
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+    }
+
+    strong {
+      color: var(--primary);
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="../index.html#projects" class="back-btn">← Retour au Portfolio</a>
+
+  <div class="hero">
+    <h1>Sign Translator</h1>
+    <p>Application pour la traduction de la langue des signes</p>
+  </div>
+
+<div class="section">
+    <h2>Fonctionnalités</h2>
+    <ul>
+      <li>Traduction en temps réel de la langue des signes en texte</li>
+      <li>Reconnaissance vidéo des gestes via la caméra du téléphone</li>
+      <li>Affichage instantané du texte traduit à l’écran</li>
+      <li>Support de l’alphabet et de mots courants en langue des signes</li>
+      <li>Interface simple et accessible pour tous les utilisateurs</li>
+      <li>Historique des traductions récentes</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Expérience Utilisateur</h2>
+    <ul>
+      <li>Accueil intuitif avec instructions pour démarrer la traduction</li>
+      <li>Activation rapide de la caméra pour la reconnaissance des gestes</li>
+      <li>Affichage en temps réel du texte traduit à l’écran</li>
+      <li>Possibilité de consulter l’historique des traductions</li>
+      <li>Interface adaptée pour une utilisation accessible à tous</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Technologies Utilisées</h2>
+    <ul>
+      <li><strong>Python</strong> pour le développement mobile multiplateforme</li>
+      <li><strong>TensorFlow</strong> pour la reconnaissance des gestes en temps réel</li>
+      <li><strong>SQLite</strong> pour la gestion locale de l’historique</li>
+      <li><strong>Caméra mobile</strong> pour la capture vidéo des signes</li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eplanet Quiz | Project Details</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #0d1117;
+      color: #c9d1d9;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #58a6ff;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 2rem;
+      text-decoration: none;
+      background: #238636;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #2ea043;
+    }
+
+    .card {
+      background-color: #161b22;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      color: #1f6feb;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin: 0.5rem 0 1rem 0;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html#projects" class="back-btn">← Back to Portfolio</a>
+
+  <h1>Eplanet Quiz</h1>
+
+  <div class="card">
+    <h2>Project Overview</h2>
+    <p><strong>Eplanet Quiz</strong> is an interactive English quiz platform inspired by the TCF exam. It is designed to help users practice English comprehension through audio, image, and text-based questions while tracking performance.</p>
+  </div>
+
+  <div class="card">
+    <h2>Key Features</h2>
+    <ul>
+      <li>User registration and login system (with ID and password)</li>
+      <li>Multiple difficulty levels: Beginner, Intermediate, Advanced</li>
+      <li>Interactive quiz interface with audio and image support</li>
+      <li>Ability to change answers before clicking “Next”</li>
+      <li>Result page with detailed table of correct/wrong answers</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Admin Panel</h2>
+    <ul>
+      <li>View registered users and their performance</li>
+      <li>Add new quiz questions manually</li>
+      <li>Import quiz data from JSON or Excel files</li>
+      <li>Upload related images and audio files</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Technologies Used</h2>
+    <ul>
+      <li><strong>Frontend & UI:</strong> Flet (Flutter-like UI in Python)</li>
+      <li><strong>Backend:</strong> Python, SQLite3</li>
+      <li><strong>Assets:</strong> Local image/audio files for questions</li>
+      <li><strong></strong> SQLite for user data and quiz questions</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Project Structure</h2>
+    <ul>
+      <li><strong>backend/</strong>: Authentication and database logic</li>
+      <li><strong>frontend/</strong>: All UI views (login, signup, dashboard, quiz, results, admin)</li>
+      <li><strong>assets/</strong>: Image and audio folders for quiz media</li>
+    </ul>
+  </div>
+
+
+</body>
+</html>

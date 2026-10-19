@@ -3,119 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Projects</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Projects | CHAOUI Rayen</title>
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>My Projects</h1>
-    <p>Discover all the projects I have developed</p>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="../index.html">CHAOUI <span>Rayen</span></a>
+      <nav class="nav" id="siteNav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="../contact_me/contact_me.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="darkModeToggle" type="button" aria-label="Switch theme">☀</button>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
   </header>
 
-  <main class="projects-container">
-
-    <a href="SmartShelf.html" class="project-card-horizontal">
-      <div class="card-content">
-        <h2>Smart-Shelf</h2>
-        <p>Library management app with a modern interface and local storage.</p>
-        <div class="tech-list">
-          <span class="tech-item">Flet</span>
-          <span class="tech-item">Python</span>
-          <span class="tech-item">JSON: LocalStorage</span>
-        </div>
+  <main class="page">
+    <div class="container">
+      <div class="page-hero">
+        <p class="kicker">Work</p>
+        <h1>All projects</h1>
+        <p class="lead">A consistent overview of the applications, platforms, and experiments I have built.</p>
       </div>
-    </a>
 
-    <a href="Wassalni.html" class="project-card-horizontal">
-      <div class="card-content">
-        <h2>Wassalni</h2>
-        <p>Intercity carpooling platform with geolocation and user profiles.</p>
-        <div class="tech-list">
-          <span class="tech-item">Flutter</span>
-          <span class="tech-item">Node.js</span>
-          <span class="tech-item">Express.js</span>
-          <span class="tech-item">MongoDB</span>
-        </div>
-      </div>
-    </a>
+      <div class="projects-grid">
 
-    <a href="Arcade_Game.html" class="project-card-horizontal">
-      <div class="card-content">
-        <h2>Arcade Game</h2>
-        <p>Classic shooting game built using HTML, CSS, and JavaScript.</p>
-        <div class="tech-list">
-          <span class="tech-item">HTML</span>
-          <span class="tech-item">CSS</span>
-          <span class="tech-item">JavaScript</span>
-          <span class="tech-item">Socket.io</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="Fingers_Counter.html" class="project-card-horizontal">
-      <div class="card-content">
-        <h2>Fingers Counter</h2>
-        <p>Detects and counts fingers in real time using a webcam and OpenCV.</p>
-        <div class="tech-list">
-          <span class="tech-item">Python</span>
-          <span class="tech-item">OpenCV</span>
-          <span class="tech-item">MediaPipe</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="Car_Maintenance.html" class="project-card-horizontal">
-      <div class="card-content">
-        <h2>Car Maintenance</h2>
-        <p>Vehicle maintenance tracking app with automated maintenance alerts.</p>
-        <div class="tech-list">
-          <span class="tech-item">Flutter</span>
-          <span class="tech-item">SQLite</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="QR_Generator.html" class="project-card-horizontal">
-      <div class="card-content">
-        <h2>QR Code Generator</h2>
-        <p>Web-based QR code generator with customizable options.</p>
-        <div class="tech-list">
-          <span class="tech-item">Python</span>
-          <span class="tech-item">Qrcode</span>
-          <span class="tech-item">Pillow</span>
-          <span class="tech-item">Tkinter</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="Sign_Language_Translator.html" class="project-card-horizontal">
-      <div class="card-content">
-        <h2>Sign Language Translator</h2>
-        <p>Real-time sign language translation using webcam and OpenCV.</p>
-        <div class="tech-list">
-          <span class="tech-item">Python</span>
-          <span class="tech-item">ASL Dataset</span>
-          <span class="tech-item">OpenCV</span>
-          <span class="tech-item">MediaPipe</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="ProLingo.html" class="project-card-horizontal">
+        <a href="brain_tumor_detection.html" class="project-card">
+          <img class="project-thumb" src="../images/brain tumor.jpeg" alt="Brain Tumor Detection preview" loading="lazy">
           <div class="card-content">
-            <h2>ProLingo</h2>
-            <p>Interactive English Learning Plateform.</p>
+            <h2>Brain Tumor Detection using Ensemble Deep Learning</h2>
+            <p>A system that detects brain tumors in MRI images using a stacking ensemble of deep learning models.</p>
+            <div class="tech-list">
+              <span class="tech-item">Python</span>
+              <span class="tech-item">TensorFlow</span>
+              <span class="tech-item">Keras</span>
+              <span class="tech-item">OpenCV</span>
+              <span class="tech-item">NumPy</span>
+              <span class="tech-item">Pandas</span>
+              <span class="tech-item">Scikit-learn</span>
+              <span class="tech-item">Matplotlib</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="Wassalni.html" class="project-card">
+          <img class="project-thumb" src="../images/wassalni.jpeg" alt="Wassalni preview" loading="lazy">
+          <div class="card-content">
+            <h2>Wassalni</h2>
+            <p>Intercity carpooling platform with geolocation and user profiles.</p>
+            <div class="tech-list">
+              <span class="tech-item">Flutter</span>
+              <span class="tech-item">Node.js</span>
+              <span class="tech-item">Express.js</span>
+              <span class="tech-item">MongoDB</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="SmartShelf.html" class="project-card">
+          <img class="project-thumb" src="../images/smartshelf.jpg" alt="SmartShelf preview" loading="lazy">
+          <div class="card-content">
+            <h2>SmartShelf</h2>
+            <p>Library management app with a modern interface and local storage.</p>
             <div class="tech-list">
               <span class="tech-item">Flet</span>
-              <span class="tech-item">File picker</span>
+              <span class="tech-item">Python</span>
+              <span class="tech-item">JSON</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="Arcade_Game.html" class="project-card">
+          <div class="project-thumb thumb-game"></div>
+          <div class="card-content">
+            <h2>Arcade Game</h2>
+            <p>Classic shooting game built with HTML, CSS, and JavaScript.</p>
+            <div class="tech-list">
+              <span class="tech-item">HTML</span>
+              <span class="tech-item">CSS</span>
+              <span class="tech-item">JavaScript</span>
+              <span class="tech-item">Socket.io</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="Fingers_Counter.html" class="project-card">
+          <div class="project-thumb thumb-hand"></div>
+          <div class="card-content">
+            <h2>Fingers Counter</h2>
+            <p>Detects and counts fingers in real time using a webcam and OpenCV.</p>
+            <div class="tech-list">
+              <span class="tech-item">Python</span>
+              <span class="tech-item">OpenCV</span>
+              <span class="tech-item">MediaPipe</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="Car_Maintenance.html" class="project-card">
+          <div class="project-thumb thumb-car"></div>
+          <div class="card-content">
+            <h2>Car Maintenance</h2>
+            <p>Vehicle maintenance tracking app with automated maintenance alerts.</p>
+            <div class="tech-list">
+              <span class="tech-item">Flutter</span>
+              <span class="tech-item">SQLite</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="QR_Generator.html" class="project-card">
+          <div class="project-thumb thumb-qr"></div>
+          <div class="card-content">
+            <h2>QR Code Generator</h2>
+            <p>Desktop QR code generator with a simple, customizable interface.</p>
+            <div class="tech-list">
+              <span class="tech-item">Python</span>
+              <span class="tech-item">Qrcode</span>
+              <span class="tech-item">Pillow</span>
+              <span class="tech-item">Tkinter</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="Sign_Language_Translator.html" class="project-card">
+          <div class="project-thumb thumb-sign"></div>
+          <div class="card-content">
+            <h2>Sign Language Translator</h2>
+            <p>Real-time sign language translation using a webcam and OpenCV.</p>
+            <div class="tech-list">
+              <span class="tech-item">Python</span>
+              <span class="tech-item">OpenCV</span>
+              <span class="tech-item">MediaPipe</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="ProLingo.html" class="project-card">
+          <div class="project-thumb thumb-learn"></div>
+          <div class="card-content">
+            <h2>ProLingo</h2>
+            <p>Interactive English learning platform with quizzes, courses, and admin tools.</p>
+            <div class="tech-list">
+              <span class="tech-item">Flet</span>
               <span class="tech-item">SQLite3</span>
               <span class="tech-item">Reportlab</span>
             </div>
           </div>
-    </a>
-
-
-
+        </a>
+      </div>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 CHAOUI Rayen</span>
+      <span>Software Engineering · Algeria</span>
+    </div>
+  </footer>
+  <script src="../js/script.js"></script>
 </body>
 </html>

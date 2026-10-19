@@ -5,170 +5,183 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CHAOUI Rayen | Portfolio</title>
   <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
 </head>
 <body>
-  <header>
-    <h1>CHAOUI Rayen</h1>
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button id="darkModeToggle">🌙</button>
+  <a class="skip-link" href="#about">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">CHAOUI <span>Rayen</span></a>
+      <nav class="nav" id="siteNav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="contact_me/contact_me.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="darkModeToggle" type="button" aria-label="Switch theme">☀</button>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
   </header>
 
-
-  <!-- About Section -->
-  <section id="about" class="about" data-aos="fade-up">
-    <div class="profile">
-      <img src="images/rayen_pic.jpg" alt="Rayen Chaoui" class="profile-pic"/>
+  <section id="about" class="hero">
+    <div class="container hero-grid">
+      <div class="profile-frame">
+        <img src="images/rayen_pic.jpg" alt="Rayen Chaoui" class="profile-pic"/>
+      </div>
       <div>
-        <h2>Hi, I'm Rayen !</h2>
-        <p>Software Engineering student from Algeria passionate about impactful software.</p>
-        <ul>
-          <li>Looking to grow as a back-end developer.</li>
-          <li>Skilled in Node.js, Express.js, MongoDB, MySQL.</li>
-          <li>Expanding skills in Python, JavaScript, and Flutter.</li>
-          <li>Exploring AI & Computer Vision (PyTorch, OpenCV).</li>
-          <li>Passionate about learning and solving real-world problems.</li>
+        <p class="kicker">Software Engineer | Master's Graduate</p>
+        <h1>Building reliable software with a clear, modern craft.</h1>
+        <p class="lead">I’m Rayen, a software engineer with a Master's degree in Computer Science from Algeria focused on backend systems, product-minded apps, and practical computer vision.</p>
+        <ul class="highlight-list">
+          <li>Growing as a backend developer with Node.js, Express, MongoDB, and MySQL.</li>
+          <li>Expanding across Python, JavaScript, and Flutter.</li>
+          <li>Exploring AI and computer vision with PyTorch and OpenCV.</li>
+          <li>Drawn to learning that solves real-world problems.</li>
         </ul>
-        <div style="margin-top: 2rem;">
-          <button onclick="location.href='projects/projects.html'"
-                  style="padding: 0.7rem 1.5rem; font-size: 1rem; margin-right: 1rem; cursor: pointer;">
-             See My Projects
-          </button>
-          <button onclick="location.href='contact_me/contact_me.html'"
-                  style="padding: 0.7rem 1.5rem; font-size: 1rem; cursor: pointer;">
-             Contact Me
-          </button>
+        <div class="hero-actions">
+          <a class="btn" href="projects/projects.html">View projects</a>
+          <a class="btn btn-ghost" href="contact_me/contact_me.html">Contact me</a>
         </div>
       </div>
     </div>
   </section>
 
-
-  <!-- Skills Section -->
-<section id="skills" data-aos="fade-up">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-
-    <div class="skill-category">
-      <h3>Programming Languages</h3>
-      <ul>
-        <li>JavaScript</li>
-        <li>Python 3</li>
-        <li>Dart (Flutter)</li>
-        <li>Java (Intermediate)</li>
-        <li>C (Basics)</li>
-        <li>HTML5 & CSS3</li>
-        <li>SQL (PLSQL)</li>
-      </ul>
-    </div>
-
-    <div class="skill-category">
-      <h3>Frontend Development</h3>
-      <ul>
-        <li>HTML5, CSS3, Responsive Design</li>
-        <li>Flutter (Mobile UI & Widgets)</li>
-        <li>Basic DOM Manipulation & Events</li>
-      </ul>
-    </div>
-
-    <div class="skill-category">
-      <h3>Backend Development</h3>
-      <ul>
-        <li>Node.js & Express.js</li>
-        <li>RESTful APIs & Routing</li>
-        <li>Authentication (JWT, Sessions)</li>
-      </ul>
-    </div>
-
-    <div class="skill-category">
-      <h3>Databases</h3>
-      <ul>
-        <li>MongoDB (NoSQL)</li>
-        <li>MySQL (Relational DB)</li>
-        <li>Local JSON Storage (App Data)</li>
-        <li>Firebase</li>
-        <li>SQLite</li>
-      </ul>
-    </div>
-
-    <div class="skill-category">
-      <h3>AI & Computer Vision</h3>
-      <ul>
-        <li>OpenCV (Image Processing)</li>
-        <li>PyTorch (CNN & Model Training)</li>
-        <li>Real-Time Hand Gesture Recognition</li>
-        <li>Real-Time Fingers Counter</li>
-        <li>Basic Machine Learning Concepts</li>
-      </ul>
-    </div>
-
-    <div class="skill-category">
-      <h3>Tools & Workflow</h3>
-      <ul>
-        <li>Git & GitHub (Version Control)</li>
-        <li>VS Code, Postman, Thunder-client</li>
-        <li>Flet, Node.js, Express.js</li>
-        <li>Linux (Pop!_OS), Terminal Tools</li>
-        <li>Design pattern : Proxy, MVC</li>
-        <li>Overleaf Workflow : LaTeX</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects" data-aos="fade-up">
-  <h2 style="text-align: center; font-size: 2rem;">Recent projects</h2>
-  <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem;">Here are some of my personal and academic projects I've worked on:</p>
-
-  <div class="project-cards">
-
-    <div class="card" onclick="location.href='projects/SmartShelf.html'">
-      <img src="images/smartshelf.jpg" alt="SmartShelf Project" class="card-img" loading="lazy">
-      <h3>SmartShelf</h3>
-      <p>Library management app with a modern interface and local storage.</p>
-      <span class="tech">Python (Flet)  • JSON: LocalStorage</span>
-    </div>
-
-    <div class="card" onclick="location.href='projects/Wassalni.html'">
-      <img src="images/wassalni.jpeg" alt="Wassalni Project" class="card-img" loading="lazy">
-      <h3>Wassalni</h3>
-      <p>Intercity carpooling platform with geolocation and user profiles.</p>
-      <span class="tech">Flutter • Node.js • Express.js • MongoDB</span>
-    </div>
-
-  </div>
-  
-<div style="text-align: center; margin: 2rem auto 0;">
-  <button class="load_more" onclick="location.href='projects/projects.html'">
-     View All Projects
-  </button>
-</div>
-
-</section>
-
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact" data-aos="zoom-in">
-    <h2>Contact Me</h2>
-    <div class="social-links">
-      <a href="https://github.com/Rayen-CHAOUI" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/Rayen-CHAOUI/" target="_blank">LinkedIn</a>
-      <a href="mailto:chaouirayen@gmail.com">Email</a>
-      <a href="https://instagram.com/rayen.chaoui" target="_blank">Instagram</a>
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Skills</h2>
+        <p>A focused stack across languages, product surfaces, and engineering tools.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming languages</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>Python 3</li>
+            <li>Dart (Flutter)</li>
+            <li>Java (Intermediate)</li>
+            <li>C (Basics)</li>
+            <li>HTML5 &amp; CSS3</li>
+            <li>SQL (PL/SQL)</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5, CSS3, Responsive Design</li>
+            <li>Flutter UI</li>
+            <li>DOM &amp; Events</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js &amp; Express.js</li>
+            <li>REST APIs</li>
+            <li>JWT &amp; Sessions</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <ul>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>SQLite</li>
+            <li>Firebase</li>
+            <li>Local JSON storage</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>AI &amp; Computer Vision</h3>
+          <ul>
+            <li>OpenCV</li>
+            <li>PyTorch</li>
+            <li>Hand gesture recognition</li>
+            <li>Machine learning fundamentals</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Tools &amp; workflow</h3>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>VS Code, Postman</li>
+            <li>Linux (Pop!_OS)</li>
+            <li>MVC &amp; Proxy patterns</li>
+            <li>LaTeX / Overleaf</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Academic Projects</h2>
+        <p>Selected final-year projects from my Master's and Licence degrees.</p>
+      </div>
+      <div class="project-cards">
+        <a class="card" href="projects/brain_tumor_detection.html">
+          <img src="images/brain tumor.jpeg" alt="Brain Tumor Detection" class="card-img" loading="lazy">
+          <div class="card-body">
+            <h3>Brain Tumor Detection using Ensemble Deep Learning (Master's Project)</h3>
+            <p>A system that detects brain tumors in MRI images using a stacking ensemble of deep learning models.</p>
+            <div class="tech-list">
+              <span class="tech-item">Python</span>
+              <span class="tech-item">TensorFlow</span>
+              <span class="tech-item">Keras</span>
+              <span class="tech-item">OpenCV</span>
+              <span class="tech-item">NumPy</span>
+              <span class="tech-item">Pandas</span>
+              <span class="tech-item">Scikit-learn</span>
+              <span class="tech-item">Matplotlib</span>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="projects/Wassalni.html">
+          <img src="images/wassalni.jpeg" alt="Wassalni" class="card-img" loading="lazy">
+          <div class="card-body">
+            <h3>Wassalni (Licence Project | Startup)</h3>
+            <p>A mobile app for intercity carpooling with geolocation and user profiles. Developed as a startup project during my Licence degree.</p>
+            <div class="tech-list">
+              <span class="tech-item">Flutter</span>
+              <span class="tech-item">Node.js</span>
+              <span class="tech-item">Express.js</span>
+              <span class="tech-item">JWT</span>
+              <span class="tech-item">Bcrypt</span>
+              <span class="tech-item">MongoDB</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="center">
+        <a class="btn btn-ghost" href="projects/projects.html">View all projects</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-preview">
+    <div class="container">
+      <p class="kicker">Contact</p>
+      <h2 class="section-title">Let’s work together</h2>
+      <p class="lead" style="margin: 0.8rem auto 0;">Open to internships, collaborations, and backend-focused opportunities.</p>
+      <div class="social-links">
+        <a href="https://github.com/Rayen-CHAOUI" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/Rayen-CHAOUI/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:chaouirayen@gmail.com">Email</a>
+        <a href="https://instagram.com/rayen.chaoui" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 CHAOUI Rayen</span>
+      <span>Software Engineering · Algeria</span>
+    </div>
+  </footer>
+
   <script src="js/script.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init();</script>
 </body>
 </html>

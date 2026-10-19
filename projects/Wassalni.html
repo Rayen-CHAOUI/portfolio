@@ -1,136 +1,93 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WASSALNI | Détails du projet</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-      background-color: #0d1117;
-      color: #c9d1d9;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: #58a6ff;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    .back-btn {
-      display: inline-block;
-      margin-bottom: 2rem;
-      text-decoration: none;
-      background: #238636;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-
-    .back-btn:hover {
-      background: #2ea043;
-    }
-
-    .card {
-      background-color: #161b22;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .card h2 {
-      color: #1f6feb;
-      margin-top: 0;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-      margin: 0.5rem 0 1rem 0;
-    }
-
-    li {
-      margin-bottom: 0.5rem;
-    }
-  </style>
+  <title>Wassalni | CHAOUI Rayen</title>
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="../index.html">CHAOUI <span>Rayen</span></a>
+      <nav class="nav" id="siteNav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="../contact_me/contact_me.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="darkModeToggle" type="button" aria-label="Switch theme">☀</button>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
 
-  <a href="../index.html#projects" class="back-btn">← Retour au Portfolio</a>
+  <main class="page">
+    <div class="container">
+      <div class="page-hero">
+        <a class="back-link" href="projects.html">← All projects</a>
+        <p class="kicker">Mobile platform</p>
+        <h1>Wassalni</h1>
+        <p class="lead">Intercity carpooling platform designed to reduce congestion, lower costs, and connect travelers across wilayas.</p>
+        <div class="tech-list">
+          <span class="tech-item">Flutter</span>
+          <span class="tech-item">Node.js</span>
+          <span class="tech-item">Express.js</span>
+          <span class="tech-item">MongoDB</span>
+        </div>
+      </div>
 
-  <h1>WASSALNI</h1>
+      <div class="project-layout">
+        <section class="panel">
+          <h2>Project goal</h2>
+          <ul class="feature-list">
+            <li>Reduce traffic congestion and CO₂ emissions.</li>
+            <li>Offer an economical and ecological alternative to traditional transport.</li>
+            <li>Make communication between riders and drivers straightforward.</li>
+          </ul>
+        </section>
+        <section class="panel">
+          <h2>Core features</h2>
+          <ul class="feature-list">
+            <li>Sign-up and login with phone number.</li>
+            <li>Search and publish inter-wilaya trips.</li>
+            <li>Trip booking and payment.</li>
+            <li>Roadside assistance listings with partners.</li>
+            <li>Favorite trips and profile management.</li>
+            <li>Add one or more personal vehicles.</li>
+            <li>SOS with geolocation.</li>
+          </ul>
+        </section>
+        <section class="panel">
+          <h2>Advanced features</h2>
+          <ul class="feature-list">
+            <li>Secure payment system.</li>
+            <li>In-app messaging between users.</li>
+            <li>Ratings and reviews.</li>
+            <li>Real-time location tracking.</li>
+            <li>Push notifications and OTP validation.</li>
+          </ul>
+        </section>
+        <section class="panel">
+          <h2>Safety</h2>
+          <ul class="feature-list">
+            <li>Complete trip history.</li>
+            <li>Emergency alert system.</li>
+            <li>Identity and phone verification.</li>
+            <li>Driver background review.</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
 
-  <div class="card">
-    <h2>Objectif du projet</h2>
-    <p><strong>WASSALNI</strong> est une plateforme innovante de covoiturage interurbain visant à :</p>
-    <ul>
-      <li>Réduire les embouteillages et les émissions de CO₂.</li>
-      <li>Proposer une alternative économique et écologique aux transports traditionnels.</li>
-      <li>Faciliter la communication entre les usagers pour une mobilité responsable.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Description du projet</h2>
-    <ul>
-      <li>Plateforme intuitive pour le covoiturage entre wilayas.</li>
-      <li>Planification et partage de trajets.</li>
-      <li>Messagerie intégrée et système d’évaluation.</li>
-      <li>Service de dépannage intégré avec des partenaires.</li>
-      <li>Diminution de l’empreinte carbone par le partage de véhicules.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Fonctionnalités de base</h2>
-    <ul>
-      <li>Inscription et connexion via numéro de téléphone.</li>
-      <li>Recherche et publication de trajets inter-wilayas.</li>
-      <li>Réservation et paiement des trajets.</li>
-      <li>Recherche ou proposition de services de dépannage.</li>
-      <li>Ajout de trajets aux favoris.</li>
-      <li>Gestion du profil utilisateur (infos, suppression, etc.).</li>
-      <li>Ajout d’une ou plusieurs voitures personnelles.</li>
-      <li>Déclenchement d’un SOS avec géolocalisation.</li>
-      <li>Déconnexion de l’application.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Fonctionnalités avancées</h2>
-    <ul>
-      <li>Système de paiement sécurisé.</li>
-      <li>Messagerie instantanée entre utilisateurs.</li>
-      <li>Notations et avis sur les trajets.</li>
-      <li>Suivi en temps réel par géolocalisation.</li>
-      <li>Système de notifications push.</li>
-      <li>Générateur de code OTP pour validation.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Fonctionnalités de sécurité</h2>
-    <ul>
-      <li>Historique complet des trajets.</li>
-      <li>Système d’alerte d’urgence.</li>
-      <li>Vérification d’identité et du numéro de téléphone.</li>
-      <li>Consultation des antécédents des conducteurs.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Technologies utilisées</h2>
-    <ul>
-      <li><strong>Frontend :</strong> Flutter & Dart</li>
-      <li><strong>Backend :</strong> Node.js, Express.js, MongoDB</li>
-      <li><strong>Plateforme Admin :</strong> HTML, CSS, JavaScript</li>
-    </ul>
-  </div>
-
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 CHAOUI Rayen</span>
+      <span>Software Engineering · Algeria</span>
+    </div>
+  </footer>
+  <script src="../js/script.js"></script>
 </body>
 </html>

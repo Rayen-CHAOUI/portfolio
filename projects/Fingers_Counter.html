@@ -1,183 +1,70 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Finger Counter | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <style>
-    :root {
-      --bg: #0d1117;
-      --text: #c9d1d9;
-      --primary: #58a6ff;
-      --secondary: #1f6feb;
-      --card-bg: #161b22;
-      --accent: #238636;
-      --accent-hover: #2ea043;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      padding: 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    a.back-btn {
-      display: inline-block;
-      margin-bottom: 2rem;
-      text-decoration: none;
-      background: var(--accent);
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border-radius: 8px;
-      font-weight: 600;
-      transition: background 0.3s ease;
-    }
-
-    a.back-btn:hover {
-      background: var(--accent-hover);
-    }
-
-    .hero {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: #8b949e;
-    }
-
-    .section {
-      margin-bottom: 3rem;
-    }
-
-    .section h2 {
-      font-size: 2rem;
-      color: var(--secondary);
-      margin-bottom: 1rem;
-      border-bottom: 2px solid var(--secondary);
-      display: inline-block;
-      padding-bottom: 0.3rem;
-    }
-
-    .card {
-      background: var(--card-bg);
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card h3 {
-      margin-bottom: 0.5rem;
-      font-size: 1.4rem;
-      color: var(--primary);
-    }
-
-    ul {
-      padding-left: 1.2rem;
-      list-style-type: none;
-    }
-
-    ul li {
-      margin-bottom: 0.5rem;
-      position: relative;
-      padding-left: 1.2rem;
-    }
-
-    ul li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      color: var(--primary);
-    }
-
-    .tech-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .tech-item {
-      background: var(--card-bg);
-      padding: 0.8rem 1.2rem;
-      border-radius: 8px;
-      color: var(--text);
-      font-weight: 500;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+  <title>Finger Counter | CHAOUI Rayen</title>
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-
-  <a href="../index.html#projects" class="back-btn">← Retour au Portfolio</a>
-
-  <div class="hero">
-    <h1>Finger Counter</h1>
-    <p>Une application Python interactive qui détecte les doigts levés en temps réel avec webcam et interface graphique</p>
-  </div>
-
-  <div class="section">
-    <h2>Fonctionnalités</h2>
-
-    <div class="card">
-      <h3>Détection & Comptage</h3>
-      <ul>
-        <li>Détection en temps réel jusqu’à deux mains simultanément</li>
-        <li>Comptage précis du nombre de doigts levés</li>
-      </ul>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="../index.html">CHAOUI <span>Rayen</span></a>
+      <nav class="nav" id="siteNav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="../contact_me/contact_me.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="darkModeToggle" type="button" aria-label="Switch theme">☀</button>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
     </div>
+  </header>
 
-    <div class="card">
-      <h3>Interface Graphique Moderne</h3>
-      <ul>
-        <li>Interface avec <strong>CustomTkinter</strong></li>
-        <li>Lancement en un clic</li>
-        <li>Mode clair et sombre</li>
-        <li>Affichage de l’heure en direct</li>
-        <li>Flux webcam intégré dans la fenêtre</li>
-      </ul>
+  <main class="page">
+    <div class="container">
+      <div class="page-hero">
+        <a class="back-link" href="projects.html">← All projects</a>
+        <p class="kicker">Computer vision</p>
+        <h1>Finger Counter</h1>
+        <p class="lead">A Python application that detects raised fingers in real time using a webcam and a custom GUI.</p>
+        <div class="tech-list">
+          <span class="tech-item">Python 3</span>
+          <span class="tech-item">OpenCV</span>
+          <span class="tech-item">MediaPipe</span>
+          <span class="tech-item">CustomTkinter</span>
+        </div>
+      </div>
+
+      <div class="project-layout">
+        <section class="panel">
+          <h2>Detection &amp; counting</h2>
+          <ul class="feature-list">
+            <li>Real-time detection of up to two hands</li>
+            <li>Accurate count of raised fingers</li>
+          </ul>
+        </section>
+        <section class="panel">
+          <h2>Interface</h2>
+          <ul class="feature-list">
+            <li>CustomTkinter interface</li>
+            <li>One-click launch</li>
+            <li>Light and dark modes</li>
+            <li>Live clock and embedded webcam feed</li>
+          </ul>
+        </section>
+      </div>
     </div>
-  </div>
+  </main>
 
-  <div class="section">
-    <h2>Technologies Utilisées</h2>
-    <div class="tech-list">
-      <div class="tech-item">Python 3</div>
-      <div class="tech-item">OpenCV</div>
-      <div class="tech-item">MediaPipe</div>
-      <div class="tech-item">CustomTkinter</div>
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 CHAOUI Rayen</span>
+      <span>Software Engineering · Algeria</span>
     </div>
-  </div>
-
+  </footer>
+  <script src="../js/script.js"></script>
 </body>
 </html>

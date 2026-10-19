@@ -3,142 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ProLingo | Project Details</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-      background-color: #0d1117;
-      color: #c9d1d9;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: #58a6ff;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    .back-btn {
-      display: inline-block;
-      margin-bottom: 2rem;
-      text-decoration: none;
-      background: #238636;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-
-    .back-btn:hover {
-      background: #2ea043;
-    }
-
-    .card {
-      background-color: #161b22;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .card h2 {
-      color: #1f6feb;
-      margin-top: 0;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-      margin: 0.5rem 0 1rem 0;
-    }
-
-    li {
-      margin-bottom: 0.5rem;
-    }
-  </style>
+  <title>ProLingo | CHAOUI Rayen</title>
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="../index.html">CHAOUI <span>Rayen</span></a>
+      <nav class="nav" id="siteNav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="../contact_me/contact_me.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="darkModeToggle" type="button" aria-label="Switch theme">☀</button>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
 
-  <a href="../index.html#projects" class="back-btn">← Back to Portfolio</a>
+  <main class="page">
+    <div class="container">
+      <div class="page-hero">
+        <a class="back-link" href="projects.html">← All projects</a>
+        <p class="kicker">Learning platform</p>
+        <h1>ProLingo</h1>
+        <p class="lead">An English learning platform built with Flet and SQLite. Users take multimedia quizzes and follow course pages; admins manage users and questions from a dashboard.</p>
+        <div class="tech-list">
+          <span class="tech-item">Flet</span>
+          <span class="tech-item">Python</span>
+          <span class="tech-item">SQLite3</span>
+          <span class="tech-item">Reportlab</span>
+        </div>
+      </div>
 
-  <h1>ProLingo</h1>
+      <div class="project-layout">
+        <section class="panel">
+          <h2>Key features</h2>
+          <ul class="feature-list">
+            <li>User registration and login</li>
+            <li>Levels from Elementary to Advanced</li>
+            <li>Quizzes with text, image, and audio</li>
+            <li>Change answers before moving to the next question</li>
+            <li>Results table with PDF export</li>
+            <li>Admin panel for users and questions</li>
+            <li>Course pages: Grammar, Vocabulary, Speaking, Listening, Exercises</li>
+          </ul>
+        </section>
+        <section class="panel">
+          <h2>User panel</h2>
+          <ul class="feature-list">
+            <li>Session-based login</li>
+            <li>View personal performance stats</li>
+            <li>Edit password, level, and username</li>
+            <li>Access learning materials and quizzes</li>
+            <li>Download quiz results as PDF</li>
+          </ul>
+        </section>
+        <section class="panel">
+          <h2>Admin panel</h2>
+          <ul class="feature-list">
+            <li>View registered users and performance stats</li>
+            <li>Add questions manually or import from JSON/Excel</li>
+            <li>Upload question assets (images/audio)</li>
+            <li>Add new users and admins</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
 
-  <div class="card">
-    <h2>Project Overview</h2>
-    <p><strong>ProLingo</strong>  An English language platform built with Flet and SQLite3.
-       Where users can register, log in, and take quizzes with multimedia questions (text, image, and audio). 
-       Admins can manage users and questions via a Dashboard,
-       Users also have access to various learning course pages such as Grammar, Vocabulary, Speaking, Listening, and Exercises.</p>
-  </div>
-
-  <div class="card">
-    <h2>Key Features</h2>
-    <ul>
-      <li>User registration and login system (with ID and password)</li>
-      <li>Multiple difficulty levels: Elementary, Pre-intermediate, Intermediate, Upper-intermediate, Advanced</li>
-      <li>Interactive quiz interface with audio and image support</li>
-      <li>Ability to change answers before clicking “Next”</li>
-      <li>Result page with detailed table of correct/wrong answers</li>
-      <li>Ability to extract results into PDF files.</li>
-      <li>Admin panel for managing users and quiz questions</li>
-      <li>Profile page to edit user's info.</li>
-      <li>Learning course pages: Grammar, Vocabulary, Speaking, Listening, Exercises</li>
-    </ul>
-  </div>
-
-    <div class="card">
-    <h2>User Panel</h2>
-    <ul>
-      <li>stored in `backend/eplanet_users.db/user`</li>
-      <li>User login via session.</li>
-      <li>View own performance stats.</li>
-      <li>Edit own info (password, level, username).</li>
-      <li>Access learning materials and quizzes.</li>
-      <li>Upload question assets (images/audio).</li>
-      <li>Download quiz results as PDF.</li>
-      <li>Access to various learning course pages.</li>
-      <li>Quiz questions with text, image, and audio formats.</li>
-      <li>Interactive quiz interface with real-time feedback.</li>
-      <li>Ability to change answers before submitting.</li>
-      <li>Result page with detailed statistics.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Admin Panel</h2>
-    <ul>
-      <li>stored in `backend/eplanet_users.db/admin`</li>
-      <li>Admin login via session.</li>
-      <li>View registered users with performance stats.</li>
-      <li>Add questions manually or import from JSON/Excel.</li>
-      <li>Upload question assets (images/audio).</li>
-      <li>Edit user's info (password, level, username).</li>
-      <li>Add new users and admins.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Technologies Used</h2>
-    <ul>
-      <li><strong>Frontend & UI :</strong> Flet framework (Flutter-like UI in Python)</li>
-      <li><strong>Backend :</strong> Python, SQLite3</li>
-      <li><strong>Assets :</strong> Local image/audio files for questions</li>
-      <li><strong>SQLite :</strong>  for user data and quiz questions</li>
-      <li><strong>Reportlab :</strong> PDF export</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Project Structure</h2>
-    <ul>
-      <li><strong>backend/</strong>: Authentication and database logic</li>
-      <li><strong>frontend/</strong>: (user/ ), (admin/ ) : All UI views (login, signup, dashboard, quiz, results, add_question)</li>
-      <li><strong>assets/</strong>: Image and audio folders for quiz media</li>
-    </ul>
-  </div>
-
-
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 CHAOUI Rayen</span>
+      <span>Software Engineering · Algeria</span>
+    </div>
+  </footer>
+  <script src="../js/script.js"></script>
 </body>
 </html>
